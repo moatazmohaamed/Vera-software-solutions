@@ -10,10 +10,8 @@ Bootstrap Business website for software solutions, but could easily be changed t
 - Responsive design
 - Replaceme script for rolling words
 - Navbar scroll effect
-- Video modal
-- Animated play button
+- Script For Video model
 - Pricing grid
-- Styled modals for projects
 - Font awesome icons
 
 ## Usage

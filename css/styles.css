@@ -1,0 +1,122 @@
+.fs-xl {
+  font-size: 4.375rem;
+}
+
+.navbar {
+  transition: all 0.4s;
+}
+
+.navbar ul {
+  font-weight: 600;
+  transition: all 0.4s;
+  font-size: 1.2rem !important;
+}
+.navbar ul a:hover {
+  color: #8c8c8a !important;
+}
+.navbar ul li {
+  padding-inline: 5px;
+}
+
+.home {
+  height: 73vh;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.297)), url(../images/header-background.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+.column-svg {
+  top: 20%;
+  left: 0;
+  width: 25px;
+}
+
+.details_section h2::before {
+  content: "";
+  position: absolute;
+  top: 115%;
+  left: 0.5%;
+  width: 90px;
+  height: 4px;
+  margin: auto;
+  background-color: #fe6b2a;
+}
+.details_section .section_list p {
+  font-size: 1.2rem;
+}
+.details_section .form-control {
+  border: 1px solid #8c8c8a !important;
+  border-radius: 5px;
+  background-color: #35353a;
+}
+
+.solution .solution_card {
+  background-color: #35353a;
+  padding-inline: 0;
+}
+
+.expertise {
+  background-color: #35353a;
+}
+.expertise .expertise_services i {
+  font-size: 4rem;
+}
+
+.main-video .play-btn {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-video .play-btn .video-play-btn {
+  background-color: #fe6b2a;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.main-video .video-modal .modal-dialog {
+  max-width: 1000px;
+  margin: 10px auto;
+}
+
+.pricing .pricing-card {
+  background-color: #35353a;
+}
+.pricing .pricing-card h2 {
+  font-size: 4rem;
+}
+
+.projects .projects_card {
+  background-color: #35353a;
+}
+
+footer {
+  background-color: #35353a;
+}
+
+@media (max-width: 768px) {
+  .fs-xl {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .column-svg img {
+    display: none;
+  }
+  .details_section .section_list p {
+    font-size: 1.1rem !important;
+  }
+  .solution .heading h4 {
+    width: 100% !important;
+  }
+  .expertise .section_title p {
+    width: 100% !important;
+  }
+  .projects .project-p {
+    width: 100% !important;
+  }
+  .sub-header p {
+    width: 100% !important;
+  }
+  .sub-btn {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,198 @@
+// vars
+$primary: #fe6b2a;
+$secondry: #35353a;
+$light-dark: #8c8c8a;
+$body-bg: #000;
+$body-color: #fff;
+
+.fs-xl {
+    font-size: 4.375rem;
+}
+
+
+// navbar
+.navbar{
+    transition: all .4s;
+}
+
+.navbar ul {
+    font-weight: 600;
+    transition: all 0.4s;
+    font-size: 1.2rem !important;
+
+    a {
+        &:hover {
+            color: $light-dark !important;
+        }
+    }
+
+    li {
+        padding-inline: 5px;
+    }
+}
+
+// header
+
+.home {
+    height: 73vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.877), rgba(0, 0, 0, 0.297)),
+        url(../images/header-background.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.column-svg {
+    top: 20%;
+    left: 0;
+    width: 25px;
+}
+
+// Get information section
+
+
+
+.details_section {
+    h2 {
+        &::before {
+            content: '';
+            position: absolute;
+            top: 115%;
+            left: .5%;
+            width: 90px;
+            height: 4px;
+            margin: auto;
+            background-color: $primary;
+        }
+    }
+
+    .section_list {
+        p {
+            font-size: 1.2rem;
+        }
+    }
+
+    .form-control {
+        border: 1px solid $light-dark !important;
+        border-radius: 5px;
+        background-color: $secondry;
+    }
+}
+
+// Solutions
+
+.solution .solution_card {
+    background-color: $secondry;
+    padding-inline: 0;
+}
+
+// Expertise
+
+.expertise {
+    background-color: $secondry;
+
+    .expertise_services {
+        i {
+            font-size: 4rem;
+        }
+    }
+}
+
+// video section    
+
+.main-video {
+    .play-btn {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        .video-play-btn {
+            background-color: $primary;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    }
+
+    .video-modal {
+        .modal-dialog {
+            max-width: 1000px;
+            margin: 10px auto;
+        }
+    }
+}
+
+// pricing
+
+.pricing {
+    .pricing-card {
+        background-color: $secondry;
+        h2 {
+            font-size: 4rem;
+        }
+    }
+}
+
+// projects
+
+.projects{
+    .projects_card{
+        background-color: $secondry;
+    }
+}
+
+// footer
+
+footer{
+    background-color: $secondry;
+}
+
+
+//  Queries
+
+@media (max-width: 768px) {
+    .fs-xl {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .column-svg img {
+        display: none;
+    }
+
+    .details_section {
+        .section_list {
+            p {
+                font-size: 1.1rem !important;
+            }
+        }
+    }
+
+    .solution .heading {
+        h4 {
+            width: 100% !important;
+        }
+    }
+
+    .expertise {
+        .section_title {
+            p {
+                width: 100% !important;
+            }
+        }
+    }
+
+    .projects{
+        .project-p{
+            width: 100% !important;
+        }
+    }
+    .sub-header{
+        p{
+            width: 100% !important;
+        }
+      
+    }
+    .sub-btn {
+        width: 100% !important;
+    }
+}
